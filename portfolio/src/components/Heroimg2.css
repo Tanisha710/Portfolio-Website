@@ -1,0 +1,39 @@
+.hero-img{
+    width: 100%;
+    background: rgba(0,0,0,0.5);
+    height:65vh;
+    position: relative;
+}
+.hero-img::before
+{
+    content:"";
+    background: url("https://img.freepik.com/free-vector/solve-mystery-magic-universe-with-night-sky-view-banner_1017-50626.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1721260800&semt=ais_user");
+    background-size: cover;
+    background-position: center top;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: -1;
+}
+.heading{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero-img h1{
+    font-size: 2.4rem;
+}
+.hero-img p{
+    font-size: 1.4rem;
+    text-align: center;
+}
+@media screen and (max-width:640px) {
+    .hero-img h1{
+        font-size: 2rem;
+    }
+}
